@@ -1,7 +1,9 @@
-# Flask tutorial 102
+# Flask REST API passing parameters
 
 This lesson will guide you to learn how to pass path arguments
 in the url and perform basic operations on arguments.
+
+General information on how to proceed with exercises [here](../../readme.md).
 
 ## Resources
 Tutorials on how to use url and path parameters in flask app:
@@ -18,9 +20,8 @@ Path parameters:
 
 ## Prerequisites
 
-Install required python modules by running:
-
-    pip install -r requirements.txt
+Details on how to setup the exercise can be 
+found [here](/python/flask/readme.md).
 
 ## Tasks
 
@@ -40,21 +41,19 @@ Install required python modules by running:
 
 Use provided bash script:
 
-    ./run_tests.sh
+    ./check_solution.sh
 
 or run the following command from current (`flask_102`) directory:
     
 Pytest:
 
-    PYTHONPATH=../../../ pytest -v
+    PYTHONPATH=. pytest -v
 
 Unittest:
 
-    PYTHONPATH=../../../ python -m unittest -v
+    PYTHONPATH=. python -m unittest -v
     
 
 ## Success conditions
 
-### 1. Unit tests pass.
-### 2. Your code is reviewed and approved.
-### 3. (?) Your knowledge was checked by mentor.
+Details in [main python track readme](/python/flask/readme.md)

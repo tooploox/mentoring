@@ -8,6 +8,34 @@
 - test,
 - create PR to YOUR repository, add the mentor as a reviewer.
 
+## Exercise setup
+
+In order to start an exercise, you need a virtual environment, activate it,
+install required modules and run solution check script (after you write code).
+You can run the following commands manually, or execute provided script.
+
+### Manual exercise setup
+Create a virtual environment:
+
+    python -m venv venv
+
+Activate virtual environment
+    
+    . venv/bin/activate
+
+
+Install required python modules by running:
+
+    pip install -r requirements.txt
+
+### Script execution
+This assumes you understang how the virtual environment is setup 
+and how to install necessary python modules (via `pip`)
+
+    ./create_venv.sh
+
+
+
 ## Exercise success conditions
 
 ### 1. Exercise check is successful (unit tests pass).

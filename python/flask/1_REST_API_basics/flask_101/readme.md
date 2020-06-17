@@ -5,6 +5,7 @@ Purpose of this lesson is to create an endpoint, run your flask app
 and make a request to your endpoint to verify it's working.
 
 General information on how to proceed with exercises [here](../../readme.md).
+
 ## Resources
 Video tutorial on how to create a flask app:
 
@@ -12,29 +13,8 @@ Video tutorial on how to create a flask app:
 
 ## Prerequisites
 
-In order to start this tutorial, you need a virtual environment, activate it,
-install required modules and run solution check script (after you write code).
-You can run the following commands manually, or execute provided script.
-
-### Manual exercise setup
-Create a virtual environment:
-
-    python -m venv venv
-
-Activate virtual environment
-    
-    . venv/bin/activate
-
-
-Install required python modules by running:
-
-    pip install -r requirements.txt
-
-### Script execution
-This assumes you understang how the virtual environment is setup 
-and how to install necessary python modules (via `pip`)
-
-    ./create_venv.sh
+Details on how to setup the exercise can be 
+found [here](/python/flask/readme.md).
 
 ## Tasks
 
