@@ -4,6 +4,7 @@ This lesson will guide you to learn how to create flask API.
 Purpose of this lesson is to create an endpoint, run your flask app 
 and make a request to your endpoint to verify it's working.
 
+General information on how to proceed with exercises [here](../../readme.md)
 ## Resources
 Video tutorial on how to create a flask app:
 
