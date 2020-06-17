@@ -10,13 +10,15 @@ Tutorials on how to use url and path parameters in flask app:
 
 Query parameters:
 
-    [Youtube tutorial](https://www.youtube.com/watch?v=yNjn_c_ovIY)
-    [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/#accessing-request-data)
+[Youtube tutorial](https://www.youtube.com/watch?v=yNjn_c_ovIY)
+
+[Flask documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/#accessing-request-data)
     
 Path parameters:
     
-    [Youtube tutorial](https://www.youtube.com/watch?v=f085KDOy43k)
-    [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/#variable-rules)
+[Youtube tutorial](https://www.youtube.com/watch?v=f085KDOy43k)
+
+[Flask documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/#variable-rules)
 
 ## Prerequisites
 
