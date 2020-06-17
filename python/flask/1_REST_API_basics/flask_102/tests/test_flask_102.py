@@ -1,8 +1,8 @@
 import unittest
 
 from unittest import TestCase
-from python.flask.flask_102.tests.support import FlaskTestMixin
-from python.flask.flask_102.flask_102 import app
+from tests.support import FlaskTestMixin
+from app import app
 
 
 class TestFlask102Bmi(TestCase, FlaskTestMixin):
