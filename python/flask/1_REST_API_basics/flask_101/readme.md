@@ -75,6 +75,4 @@ Unittest:
 
 ## Success conditions
 
-### 1. Exercise check is successful (Unit tests pass).
-### 2. Your code is reviewed and approved.
-### 3. (?) Your knowledge was checked by mentor.
+Details in [main python track readme](/python/flask/readme.md)

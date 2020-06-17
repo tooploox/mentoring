@@ -8,6 +8,12 @@
 - test,
 - create PR to YOUR repository, add the mentor as a reviewer.
 
+## Exercise success conditions
+
+### 1. Exercise check is successful (unit tests pass).
+### 2. Your code is reviewed and approved.
+### 3. (?) Your knowledge was checked by mentor.
+
 ## Tutorials list
 
 ### 1. REST API Basics
