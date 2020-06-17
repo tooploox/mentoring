@@ -10,7 +10,7 @@ You will find flask tutorials here.
 Tutorials will show you how to:
 
 Flask 101
-- [x] create a flaskk app
+- [x] create a flask app
 - [x] create API endpoints
 
 Flask 102

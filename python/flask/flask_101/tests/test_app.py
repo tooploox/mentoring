@@ -1,11 +1,9 @@
 import unittest
 
-from unittest import TestCase
-
-from python.flask.flask_101.flask_101 import app
+from app import app
 
 
-class TestFlask101(TestCase):
+class TestRestApiBasics(unittest.TestCase):
     def setUp(self) -> None:
         self.test_client = app.test_client()
 
