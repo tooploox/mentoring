@@ -23,3 +23,6 @@ Learn how to access query and path parameters passed in the url.
 
 ### 2. Flask authentication and authorization
 ``(Work in progress)``
+
+### 3. Flask Page Templating basics
+``(Work in progress)``
