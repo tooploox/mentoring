@@ -3,7 +3,8 @@
 This lesson will guide you to learn how to pass path arguments
 in the url and perform basic operations on arguments.
 
-General information on how to proceed with exercises [here](../../readme.md).
+General information on how to proceed with exercises
+can be found [here](../../readme.md).
 
 ## Resources
 Tutorials on how to use url and path parameters in flask app:
@@ -23,7 +24,7 @@ Path parameters:
 ## Prerequisites
 
 Details on how to setup the exercise can be 
-found [here](/python/flask/readme.md).
+found [here](/python_backend/readme.md).
 
 ## Tasks
 
@@ -60,4 +61,4 @@ Run the following command from current (`flask_102`) directory:
 
 ## Success conditions
 
-Details in [main python track readme](/python/flask/readme.md)
+Details in main python track [readme](/python_backend/readme.md)

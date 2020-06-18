@@ -13,7 +13,7 @@ Video tutorial on how to create a flask app:
 ## Prerequisites
 
 Details on how to setup the exercise can be 
-found [here](/python/flask/readme.md).
+found [here](../../readme.md).
 
 ## Tasks
 
@@ -52,4 +52,4 @@ Run the following command from current (`flask_101`) directory:
 This exercise does not require mentor's assistance, 
 but you are not forbidden to do so should you need help :)
 
-Details in [main python track readme](/python/flask/readme.md).
+Details in [main python track readme](/python_backend/readme.md).
