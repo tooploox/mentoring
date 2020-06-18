@@ -5,7 +5,7 @@ from tests.support import FlaskTestMixin
 from app import app
 
 
-class TestFlask102Bmi(TestCase, FlaskTestMixin):
+class TestFlask102BmiAsUrl(TestCase, FlaskTestMixin):
     def setUp(self):
         self.test_client = app.test_client()
 
@@ -72,7 +72,7 @@ class TestFlask102Bmi(TestCase, FlaskTestMixin):
                          response.data)
 
 
-class TestFlask102Bmi2(TestCase, FlaskTestMixin):
+class TestFlask102BmiAsPathParameters(TestCase, FlaskTestMixin):
     def setUp(self):
         self.test_client = app.test_client()
 
