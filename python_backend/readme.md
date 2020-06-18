@@ -49,7 +49,7 @@ and how to install necessary python modules (via `pip`)
 This tutorial shows how to create a flask app with a basic API endpoint.
 [Exercise details](2_REST_API_basics/flask_101/readme.md).
 
-#### FLask 102
+#### Flask 102
 
 Learn how to access query and path parameters passed in the url.
 [Exercise details](2_REST_API_basics/flask_102/readme.md).

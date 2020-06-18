@@ -24,7 +24,7 @@ Path parameters:
 ## Prerequisites
 
 Details on how to setup the exercise can be 
-found [here](/python_backend/readme.md).
+found [here](../../readme.md).
 
 ## Tasks
 
@@ -61,4 +61,4 @@ Run the following command from current (`flask_102`) directory:
 
 ## Success conditions
 
-Details in main python track [readme](/python_backend/readme.md)
+Details in main python track [readme](../../readme.md)

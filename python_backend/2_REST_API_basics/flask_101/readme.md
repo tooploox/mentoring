@@ -52,4 +52,4 @@ Run the following command from current (`flask_101`) directory:
 This exercise does not require mentor's assistance, 
 but you are not forbidden to do so should you need help :)
 
-Details in [main python track readme](/python_backend/readme.md).
+Details in [main python track readme](../../readme.md).
