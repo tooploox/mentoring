@@ -35,12 +35,11 @@ and how to install necessary python modules (via `pip`)
     ./create_venv.sh
 
 
-
 ## Exercise success conditions
 
 ### 1. Exercise check is successful (unit tests pass).
 ### 2. Your code is reviewed and approved.
-### 3. (?) Your knowledge was checked by mentor.
+### 3. Your knowledge was checked by mentor (if not stated otherwise).
 
 ## Tutorials list
 
@@ -55,8 +54,14 @@ This tutorial shows how to create a flask app with a basic API endpoint.
 Learn how to access query and path parameters passed in the url.
 [Exercise details](1_REST_API_basics/flask_102/readme.md).
 
-### 2. Flask authentication and authorization
+### x. Flask uploading file to server
 ``(Work in progress)``
 
-### 3. Flask Page Templating basics
+### x. Flask downloading file from server
+``(Work in progress)``
+
+### x. Flask authentication and authorization
+``(Work in progress)``
+
+### x. Flask Page Templating basics
 ``(Work in progress)``

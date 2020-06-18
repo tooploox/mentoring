@@ -31,9 +31,9 @@ found [here](/python/flask/readme.md).
 
 ### 6. Check your solution
 
-### Use script
+#### Use script
 
-Use provided bash script:
+Execute provided bash script:
 
     ./check_solution.sh
 
@@ -43,15 +43,13 @@ This script may not only execute unit tests, but also perform other checks
 
 Run the following command from current (`flask_101`) directory:
     
-Pytest:
-
-    PYTHONPATH=. pytest -v
-
-Unittest:
-
-    PYTHONPATH=. python -m unittest -v
+    . venv/bin/activate
+    python -m unittest -v
     
 
 ## Success conditions
 
-Details in [main python track readme](/python/flask/readme.md)
+This exercise does not require mentor's assistance, 
+but you are not forbidden to do so should you need help :)
+
+Details in [main python track readme](/python/flask/readme.md).

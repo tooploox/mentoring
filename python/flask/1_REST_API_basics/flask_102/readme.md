@@ -39,21 +39,23 @@ found [here](/python/flask/readme.md).
 ### 5. Error handling
     In case of invalid/missing arguments the endpoint 
     should return ``BadRequest`` response.
-### 3. Run unit tests and ensure they pass.
+### 6. Check your solution
 
-Use provided bash script:
+#### Use script
+
+Execute provided bash script:
 
     ./check_solution.sh
 
-or run the following command from current (`flask_102`) directory:
+This script may not only execute unit tests, but also perform other checks
+(like ensure you are using a virtual environment).
+#### Run unit tests and ensure they pass.
+
+Run the following command from current (`flask_102`) directory:
     
-Pytest:
-
-    PYTHONPATH=. pytest -v
-
-Unittest:
-
-    PYTHONPATH=. python -m unittest -v
+    . venv/bin/activate
+    python -m unittest -v
+    
     
 
 ## Success conditions
