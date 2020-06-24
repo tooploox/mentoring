@@ -1,41 +1,28 @@
 # Tooploox Mentoring Program
-This repository contains resources designed to upskilling engineering Plooxies with help from experienced mentors or by self-development.
+This repository contains resources for cross-skilling engineering Plooxies with help from experienced mentors or by self-development.
 
 > Currently we are working on the program and testing it with small group of people.
 
 ## Purposes of program
 * Share knowledge in Tooploox and learn from the best engineers
-  * Tooploox is full of well-experienced engineers. We want to create space to
-    share their knowledge with every Plooxie. This will build yet stronger skills set in Tooploox, in every Plooxie Engineer.
-* _Fullstacify_: Help Plooxies gaining useful skills from their not-main domain/technology. 
-  * This is not designed to reskilling anyone. We want help Plooxies to be able
-    to do more than their main technology. Most projects requires some technology as support,
-    e.g. AI project may need smaller changes to existing backend. We try to address this problem.
-* (future) Develop experience in main technology.
-  * We use our technology but we may feel less-experienced in some topics. This program is
-    also designed to find people and resources who can help with specified topics, like
-    dockerizing, integration testing or so.
+  * This is the space for our most experienced engineers to share their knowledge internally, building up skills of every Tooploox engineer.
+* _Fullstacify_: Cross-train our engineers, helping them gain skills in their non-core technologies to become more self-sufficient in projects requiring some full-stack skills. 
+  * An example is an ML engineer making some changes to an existing back-end or ever writing their own simple REST API wrapper for an ML model.
 
 ## How it works
 
-We designed a track (currently only backend with Python) parted into modules. Every module
-is focused on specific skill and tools, intended to be moderately short. The track shouldn't be
-used as a hardcoded, only-true way and order. Modules should be selected depending on
-current needs, willingness and knowledge.
+The course, currently focusing on back-end development in Python, is divided up into modules, making it easy to digest it in bite-sized chunks, each module standing on its own, letting you mix and match, choosing the modules _you_ think will benefit you the most.
 
 The Backend Python modules list is [todo].
 
-### Learn and get help from mentor
+### Learn and get help from mentors
 
-Every module has or will have a mentor who prepares or finds
-exercises, resources and maybe preferred way of learning or so. Mentor is an expert
-in his module. Anyway, any prepared module pack is reviewed and accepted to get expected
-skills.
+Every module has a mentor, responsible for shaping the module, preparing the exercises, and guiding you through the learning process. Mentor is an expert
+in his module. We take care to ensure each module is of high quality, built by mentors who are experts in the given area, every module carefully reviewed before it gets published.
 
-Mentor isn't a _teacher_. They help, find best resources, review solutions and share their
-knowledge. There is no long-time lectures or so, the main work learners do at their own.
+We are all busy. Mentors aren't lecturers, giving long boring presentations. Instead, they focus on finding the best resources, and on supporting you throughout the learning process, reviewing your solutions to exercises and answering your questions, letting you work at your own pace.
 
-The project coordinators are responsible for connecting learners and mentors, help selecting modules or so. Mentors are selected from the best Tooploox Engineers by project coordinators or current mentors.
+The project coordinators are responsible for connecting learners and mentors, help selecting modules and so on. New mentors are selected from the best Tooploox engineers by the project coordinators and current mentors.
 
 ### Self-development & share resources
 
