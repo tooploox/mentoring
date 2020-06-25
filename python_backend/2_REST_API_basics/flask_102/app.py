@@ -5,9 +5,11 @@ Details in the readme.md file.
 """
 from typing import Tuple
 
-from flask import abort, Flask, jsonify, request
+from flask import Flask, request
 
-from errorhandling import BadRequestError, bad_request
+
+class BadRequestError(ValueError):
+    pass
 
 
 app = Flask(__name__)
@@ -20,13 +22,18 @@ def status():
 
 @app.route("/bmi/")
 def bmi():
-    return {"bmi": calculate_bmi(request.args['weight'],
-                                 request.args['height'])}
+    try:
+        weight = request.args['weight']
+        height = request.args['height']
+    except KeyError as e:
+        raise BadRequestError(f"Missing '{e.args[0]}' parameter")
+
+    return {"bmi": calculate_bmi(weight, height)}
 
 
 @app.route("/bmi2/height/<height>/weight/<weight>/")
 def bmi2(weight: str, height: str):
-    return {"BMI": calculate_bmi(weight, height)}
+    return {"bmi": calculate_bmi(weight, height)}
 
 
 def calculate_bmi(weight: str, height: str) -> float:
@@ -39,8 +46,8 @@ def convert_params2float_and_check(weight: str, height: str) -> \
     try:
         weight = float(weight)
         height = float(height)
-    except (ValueError, KeyError):
-        raise abort(400)
+    except (ValueError, TypeError) as e:
+        raise BadRequestError(e)
     if not (0 < height <= 3.0):
         raise BadRequestError("Height should be in range (0.0, 3.0>")
     if not (0 < weight <= 1000):
@@ -50,7 +57,8 @@ def convert_params2float_and_check(weight: str, height: str) -> \
 
 @app.errorhandler(BadRequestError)
 def bad_request_handler(error):
-    return bad_request(str(error))
+
+    return str(error), 400
 
 
 if __name__ == '__main__':
