@@ -66,6 +66,8 @@ with module's topic. Feel free to contribute!
 * Purposes / topics to cover:
   * Flask basics
   * REST API basics
+    * handling and role of HTTP methods POST/GET/PUT/DELETE
+    * different Content-Type (text, image/file, json)
   * Implementing REST API
   * Using external APIs (ML?)
   * Flask unit testing
@@ -77,7 +79,7 @@ with module's topic. Feel free to contribute!
 <details>
   <summary>Useful resources for self-development</summary>
 
-  None yet, feel free to contribute  
+  * [RESTfulapi.net](https://restfulapi.net/) - a general introduction to REST API
 </details>
 
 ## 3. Contributing to a team project
