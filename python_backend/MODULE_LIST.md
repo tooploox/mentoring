@@ -11,6 +11,8 @@ with module's topic. Feel free to contribute!
 > When you are looking into new topics, it's always better to use already recommended materials.
 > So, when you find something that could be useful for others as well, just send a PR with it!
 
+Modules aren't ordered - numbers are only to help identifying them.
+
 - [Module list for Backend with Python](#module-list-for-backend-with-python)
   - [1. Basic unit testing in Python](#1-basic-unit-testing-in-python)
   - [2. REST API programming in Flask](#2-rest-api-programming-in-flask)
@@ -24,6 +26,7 @@ with module's topic. Feel free to contribute!
   - [10. CI/CD basics](#10-cicd-basics)
   - [11. Clean code](#11-clean-code)
   - [12. 12-factor basics](#12-12-factor-basics)
+  - [13. Advanced REST in Flask](#13-advanced-rest-in-flask)
   - [Other ideas](#other-ideas)
 
 <!-- 
@@ -241,6 +244,26 @@ with module's topic. Feel free to contribute!
   * [The Twelve-Factor App](https://12factor.net/)  
 
 </details>
+
+## 13. Advanced REST in Flask
+
+* Mentor: 
+* Prerequisites:
+  * [REST API programming in Flask](#2-rest-api-programming-in-flask)
+* Purposes / topics to cover:
+  * Document API (Swagger)
+  * Flask extension(s) to build API
+    * like `flask_resful`
+  * Tool(s) for validation and formatting input/output
+    * e.g. `marshmallow`
+  * Basic caching responses (files?)
+
+<details>
+  <summary>Useful resources for self-development</summary>
+
+  None yet, feel free to contribute  
+</details> 
+
 
 ## Other ideas
 * Devops
