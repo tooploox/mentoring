@@ -13,7 +13,7 @@ This repository contains resources for cross-skilling engineering Plooxies with 
 
 The course, currently focusing on back-end development in Python, is divided up into modules, making it easy to digest it in bite-sized chunks, each module standing on its own, letting you mix and match, choosing the modules _you_ think will benefit you the most.
 
-The Backend Python modules list is [todo].
+The Backend Python modules list is on [this page](python_backend/MODULE_LIST.md).
 
 ### Learn and get help from mentors
 
@@ -26,8 +26,8 @@ The project coordinators are responsible for connecting learners and mentors, he
 
 ### Self-development & share resources
 
-This repository is also a place for link sharing for every module [todo]. This is open
-for every contribution. [TBD]
+This repository is also a place for link sharing for every module (see module list). This is open
+for every contribution.
 
 ## Python track
 
