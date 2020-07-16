@@ -23,6 +23,15 @@ def bmi(height, weight):
     return round(weight / height ** 2, 2)
 
 
+def compute_bmi(height, weight):
+    try:
+        height = float(height)
+        weight = float(weight)
+        return dict(bmi=bmi(height, weight))
+    except (ValueError, TypeError) as error:
+        return str(error), 400
+
+
 @app.route("/bmi/")
 def calculate_bmi():
 
@@ -33,21 +42,12 @@ def calculate_bmi():
         return "Missing 'height' parameter", 400
     if not weight:
         return "Missing 'weight' parameter", 400
-
-    try:
-        height = float(height)
-        weight = float(weight)
-        return dict(bmi=bmi(height, weight))
-    except (ValueError, TypeError) as error:
-        return str(error), 400
+    return compute_bmi(height, weight)
 
 
-@app.route('/bmi2/height/<float(signed=True):height>/weight/<float(signed=True):weight>/')
+@app.route('/bmi2/height/<string:height>/weight/<string:weight>/')
 def calculate_bmi2(height, weight):
-    try:
-        return dict(bmi=bmi(height, weight))
-    except (ValueError, TypeError) as error:
-        return str(error), 400
+    return compute_bmi(height, weight)
 
 
 @app.route("/")
