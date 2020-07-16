@@ -13,6 +13,11 @@ create:
 .PHONY: check
 check:
 	@echo "checking solution..."
+	@make test
+
+.PHONY: test
+test:
+	@echo "running unit tests..."
 	. venv/bin/activate
 	python -m unittest -v
 

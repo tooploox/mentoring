@@ -29,10 +29,10 @@ Install required python modules by running:
     pip install -r requirements.txt
 
 ### Script execution
-This assumes you understang how the virtual environment is setup 
+This assumes you understand how the virtual environment is setup 
 and how to install necessary python modules (via `pip`)
 
-    ./create_venv.sh
+    make [clean] create
 
 
 ## Exercise success conditions
