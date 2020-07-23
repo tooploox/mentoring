@@ -29,10 +29,33 @@ Install required python modules by running:
     pip install -r requirements.txt
 
 ### Script execution
-This assumes you understang how the virtual environment is setup 
+This assumes you understand how the virtual environment is setup 
 and how to install necessary python modules (via `pip`)
 
-    ./create_venv.sh
+#### Clean working directory
+Removes virtual environment directory.
+
+    make clean
+
+#### Create virtual environment
+Creates virtual env, activates it and installs requirements.
+
+    make create
+
+#### Execute unit tests
+Runs unit tests
+
+    make test
+
+#### All-in-one command
+Performs all above steps.
+
+    make all
+
+is equal to
+
+    make clean create test
+
 
 
 ## Exercise success conditions

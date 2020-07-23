@@ -24,7 +24,7 @@ Path parameters:
 ## Prerequisites
 
 Details on how to setup the exercise can be 
-found [here](../../readme.md).
+found [here](../../readme.md#exercise-setup).
 
 ## Tasks
 
@@ -44,21 +44,17 @@ found [here](../../readme.md).
 
 #### Use script
 
-Execute provided bash script:
+Use provided makefile commands.
 
-    ./check_solution.sh
+Make commands are described in [python backend readme](../../readme.md#script-execution).
 
-This script may not only execute unit tests, but also perform other checks
-(like ensure you are using a virtual environment).
 #### Run unit tests and ensure they pass.
 
 Run the following command from current (`flask_102`) directory:
-    
-    . venv/bin/activate
-    python -m unittest -v
-    
-    
+
+    make test
+
 
 ## Success conditions
 
-Details in main python track [readme](../../readme.md)
+Details in [python backend readme](../../readme.md#exercise-success-conditions)
