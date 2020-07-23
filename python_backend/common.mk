@@ -20,3 +20,8 @@ test:
 .PHONY: all
 all:
 	@make clean create test
+
+.PHONY: run-app
+run-app:
+	. venv/bin/activate
+	python app.py
