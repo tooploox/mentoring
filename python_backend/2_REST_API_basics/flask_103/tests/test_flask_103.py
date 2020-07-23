@@ -9,6 +9,15 @@ class TestRestApiBasics(TestCase, FlaskTestMixin):
     def setUp(self) -> None:
         self.test_client = app.test_client()
 
+    def test_upload_file(self):
+        files = {'file': open('data/dog-image.jpg', 'rb')}
+        values = {'action': 'scale', 'value': '0.5'}
+        response = self.test_client.post('/upload',
+                                         files=files,
+                                         data=values)
+        print(response)
+        self.assertEqual(200, response.status_code)
+
     def test_client_status_ok(self):
         response = self.test_client.get('/')
         self.assertEqual(200, response.status_code)

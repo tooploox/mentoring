@@ -26,6 +26,7 @@ Upload a file to server:
 Send file from server: 
 [File download tutorial video](https://www.youtube.com/watch?v=WICXiCtXX5U)
 
+Flask-Uploads [documentation](https://pythonhosted.org/Flask-Uploads/)
 
 ## Prerequisites
 
