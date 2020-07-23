@@ -1,9 +1,11 @@
 import unittest
 
+from unittest import TestCase
+from tests.support import FlaskTestMixin
 from app import app
 
 
-class TestRestApiBasics(unittest.TestCase):
+class TestRestApiBasics(TestCase, FlaskTestMixin):
     def setUp(self) -> None:
         self.test_client = app.test_client()
 
