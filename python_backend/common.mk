@@ -2,6 +2,7 @@
 clean:
 	@echo "cleaning venv"
 	rm -rf venv
+
 .PHONY: create
 create:
 	@echo "creating venv..."
@@ -9,11 +10,6 @@ create:
 	. venv/bin/activate
 	pip install -r requirements.txt
 	pip install --upgrade pip
-
-.PHONY: check
-check:
-	@echo "checking solution..."
-	@make test
 
 .PHONY: test
 test:
@@ -23,4 +19,4 @@ test:
 
 .PHONY: all
 all:
-	@make clean create check
+	@make clean create test
