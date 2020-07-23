@@ -19,15 +19,18 @@ Purpose of this lesson is to create the following endpoints:
 General information on how to proceed with exercises [here](../../readme.md).
 
 ## Resources
-`TODO point to correct videos`
 
-Video tutorial on how to create a flask app: 
-[video](https://www.youtube.com/watch?v=mqhxxeeTbu0).
+Upload a file to server: 
+[File upload tutorial video](https://www.youtube.com/watch?v=Y82XKGKUtrU)
+
+Send file from server: 
+[File download tutorial video](https://www.youtube.com/watch?v=WICXiCtXX5U)
+
 
 ## Prerequisites
 
 Details on how to setup the exercise can be 
-found [here](../../readme.md).
+found [here](../../readme.md#exercise-setup).
 
 ## Tasks
 
@@ -47,19 +50,20 @@ found [here](../../readme.md).
 
 #### Use script
 
-Execute provided bash script:
+Use provided makefile commands.
 
-    make check
+Make commands are described in [python backend readme](../../readme.md#script-execution).
 
-This script may not only execute unit tests, but also perform other checks
-(like ensure you are using a virtual environment).
 #### Run unit tests and ensure they pass.
 
-Run the following command from current (`flask_103`) directory:
+Run the following command from current (`flask_101`) directory:
 
-    make check
+    make test
 
 
 ## Success conditions
 
-Details in [main python track readme](../../readme.md).
+This exercise does not require mentor's assistance, 
+but you are not forbidden to do so should you need help :)
+
+Details in [python backend readme](../../readme.md#exercise-success-conditions).
