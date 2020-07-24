@@ -1,3 +1,4 @@
+import json
 import unittest
 
 from unittest import TestCase
@@ -10,13 +11,18 @@ class TestRestApiBasics(TestCase, FlaskTestMixin):
         self.test_client = app.test_client()
 
     def test_upload_file(self):
-        files = {'file': open('data/dog-image.jpg', 'rb')}
-        values = {'action': 'scale', 'value': '0.5'}
-        response = self.test_client.post('/upload',
-                                         files=files,
-                                         data=values)
-        print(response)
+        data = {'action': 'scale',
+                'value': '0.5',
+                'file': (open('data/dog-image.jpg', 'rb'), 'dog-image.jpg')}
+
+        response = self.test_client.post(
+            '/upload', data=data, follow_redirects=True,
+            content_type='multipart/form-data'
+        )
         self.assertEqual(200, response.status_code)
+        data = response.json
+        self.assertEqual('scale', data['data']['action'])
+        self.assertEqual('0.5', data['data']['value'])
 
     def test_client_status_ok(self):
         response = self.test_client.get('/')

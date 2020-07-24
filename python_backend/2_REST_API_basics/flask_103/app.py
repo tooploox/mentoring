@@ -27,8 +27,9 @@ def upload_file():
         path = os.path.join(app.config['UPLOAD_FOLDER'],
                             secure_filename(f.filename))
         f.save(path)
-        data = request.values
-        return f'file {f.filename} uploaded successfully, data {data!r}'
+        data = dict(request.values)
+        message = f'file {f.filename!r} uploaded successfully.'
+        return dict(message=message, data=data)
     else:
         return "POST your files here"
 
