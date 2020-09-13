@@ -1,19 +1,18 @@
 # Flask REST API basics
 
-This lesson will guide you to learn how to upload a file to server
-and access uploaded file to perform some basic operations.
-Purpose of this lesson is to create the following endpoints:
+This lesson will guide you to learn how to upload files to server
+and perform some basic operations on that files.
+Purpose of this lesson is to create endpoint that will provide functionality:
 
 
-* `Image conversion` - convert uploaded image to grayscale 
-  and return processed image.
+* `Image conversion` - scale uploaded image if scale value is provided and save
+  scaled image as scaled_<image_name>.
 * `Image information` - retrieve basic image information and return to user.
   Basic image data:
 
-    - width,
-    - height,
+    - size = [width, height],
     - color mode,
-    - file size.
+    - file format.
 
 
 General information on how to proceed with exercises [here](../../readme.md).
@@ -38,6 +37,41 @@ found [here](../../readme.md#exercise-setup).
 ### 1. Create a flask app (following the tutorial)
 ### 2. Define the endpoint ``/``
 ### 3. Endpoint should return a dictionary with `status` key and value `ok`.
+### 4. Create an endpoint ``/upload``. 
+
+#### Description
+This endpoint's GET method should return a prompt message that should suggest posting the files.
+Any returned message should be ok.
+Endpoint should accept multiple files on POST method.
+
+If `scale` keyword is provided, uplaoded images should be scaled according to the scale factor
+and saved with changed filename `scale_<filename>` in addition to original file.
+
+Endpoint should return information on uploaded files as follows:
+
+    response = {
+        <filename_1>: {
+            'message': message  # file upload success message
+            'data': {
+                'mode': mode,
+                'format': format,
+                'scale': scale,  # if scale provided
+                'size': size_after_scaling  # if scale provided
+            }
+        }
+    }
+
+#### Flask app configuration
+    
+Uploaded files should be stored in an upload folder.
+There should be a size limit for an uploaded file.
+Let's set the limit for file to 450 kB for test purposes.
+Currently provided files are:
+
+    - data/mayan_calendar.jpg - 476 kB,
+    - data/mezoamerican_figures.jpg - 110 kB
+
+
 ### 4. Run the app
 ### 5. Check the endpoint is working. Use one or more of the following methods:
     
