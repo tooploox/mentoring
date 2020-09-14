@@ -11,7 +11,7 @@ from app import app
 from tests.support import FlaskTestMixin
 
 
-class TestRestApiBasics(TestCase, FlaskTestMixin):
+class TestFileUpload(TestCase, FlaskTestMixin):
     def setUp(self) -> None:
         self.test_client = app.test_client()
         os.makedirs(app.config['UPLOAD_FOLDER'])
@@ -27,7 +27,7 @@ class TestRestApiBasics(TestCase, FlaskTestMixin):
                                                  f'scaled_{filename}')
         with open(source_path, 'rb') as file:
             data = {
-                'scale': '0.5',
+                'scale': 0.5,
                 'files': [
                     (file, filename),
                 ]
@@ -39,7 +39,7 @@ class TestRestApiBasics(TestCase, FlaskTestMixin):
 
         self.assertEqual(HTTPStatus.OK, response.status_code)
         data = response.json[filename]
-        self.assertEqual('0.5', data['data']['scale'])
+        self.assertEqual(0.5, data['data']['scale'])
         self.assertEqual('JPEG', data['data']['format'])
         self.assertEqual('RGB', data['data']['mode'])
         self.assertEqual([800, 376], data['data']['size'])
@@ -53,7 +53,7 @@ class TestRestApiBasics(TestCase, FlaskTestMixin):
         filename = 'mayan_calendar.jpg'
         with open('data/mayan_calendar.jpg', 'rb') as file:
             data = {
-                'scale': '0.5',
+                'scale': 0.5,
                 'file': (file, filename)
             }
             response = self.test_client.post(
